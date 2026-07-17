@@ -73,7 +73,7 @@ struct SettingsView: View {
                     .accessibilityIdentifier("restoreButton")
                 }
 
-                Section("About") {
+                Section {
                     Link(destination: websiteURL) {
                         Label("Website", systemImage: "globe")
                     }
@@ -83,6 +83,8 @@ struct SettingsView: View {
                     Link(destination: termsURL) {
                         Label("Terms of use", systemImage: "doc.text")
                     }
+                } header: {
+                    Text("About")
                 } footer: {
                     Text("Hearth keeps every record on this device. Nothing is uploaded, tracked, or shared. Version 1.0")
                 }
